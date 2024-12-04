@@ -7,16 +7,17 @@
 
 /* Corpo do site */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
     color: #333;
+    line-height: 1.6;
 }
 
 /* Navbar */
 header {
     background-color: #333;
     color: white;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 header nav ul {
@@ -33,48 +34,125 @@ header nav ul li a {
     text-decoration: none;
     color: white;
     font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-/* Seções */
-section {
-    padding: 50px 20px;
-    margin: 20px;
+header nav ul li a:hover {
+    color: #f39c12; /* Cor de hover */
 }
 
-section h2 {
-    font-size: 32px;
+/* Seção Principal */
+#inicio {
+    background-color: #3498db; /* Azul para a seção principal */
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#inicio h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#inicio p {
+    font-size: 22px;
     margin-bottom: 20px;
 }
 
-section p {
-    font-size: 18px;
-    line-height: 1.5;
+/* Sobre Mim */
+#sobre {
+    background-color: #ecf0f1; /* Fundo claro para a seção sobre */
+    padding: 50px 20px;
+    text-align: center;
 }
 
-section ul {
+#sobre h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+#sobre p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#sobre ul {
     list-style-type: square;
     margin-left: 20px;
+    text-align: left;
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+/* Projetos */
+#projetos {
+    background-color: #ffffff; /* Fundo branco para os projetos */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#projetos h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #2c3e50;
 }
 
 .projeto {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
+    background-color: #ecf0f1; /* Fundo claro para cada projeto */
+    padding: 30px;
+    margin-bottom: 30px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.projeto:hover {
+    transform: scale(1.05); /* Efeito de hover nos projetos */
 }
 
 .projeto h3 {
     font-size: 24px;
+    color: #2980b9;
     margin-bottom: 10px;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    header nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
+.projeto p {
+    font-size: 18px;
+    color: #7f8c8d;
+}
+
+/* Contato */
+#contato {
+    background-color: #3498db; /* Azul para o rodapé e contato */
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contato h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#contato ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contato ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#contato ul li a {
+    color: #f39c12; /* Cor dos links */
+    text-decoration: none;
+}
+
+#contato ul li a:hover {
+    text-decoration: underline;
 }
 
 /* Rodapé */
@@ -86,4 +164,8 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+footer p {
+    font-size: 16px;
 }
