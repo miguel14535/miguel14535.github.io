@@ -8,16 +8,17 @@
 /* Corpo do site */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
+    background-color: #f4f6f9; /* Cinza claro para o fundo geral */
     color: #333;
     line-height: 1.6;
 }
 
 /* Navbar */
 header {
-    background-color: #333;
+    background-color: #2c3e50; /* Cor de fundo mais sóbria */
     color: white;
     padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
 header nav ul {
@@ -39,15 +40,16 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #f39c12; /* Cor de hover */
+    color: #f39c12; /* Cor de hover dourada */
 }
 
 /* Seção Principal */
 #inicio {
-    background-color: #3498db; /* Azul para a seção principal */
+    background: linear-gradient(135deg, #3498db, #8e44ad); /* Gradiente suave entre azul e roxo */
     color: white;
     text-align: center;
-    padding: 80px 20px;
+    padding: 100px 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 #inicio h1 {
@@ -62,7 +64,7 @@ header nav ul li a:hover {
 
 /* Sobre Mim */
 #sobre {
-    background-color: #ecf0f1; /* Fundo claro para a seção sobre */
+    background-color: #ecf0f1; /* Fundo cinza claro */
     padding: 50px 20px;
     text-align: center;
 }
@@ -88,9 +90,10 @@ header nav ul li a:hover {
 
 /* Projetos */
 #projetos {
-    background-color: #ffffff; /* Fundo branco para os projetos */
+    background-color: #ffffff; /* Fundo branco para destacar os projetos */
     padding: 50px 20px;
     text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 #projetos h2 {
@@ -100,7 +103,7 @@ header nav ul li a:hover {
 }
 
 .projeto {
-    background-color: #ecf0f1; /* Fundo claro para cada projeto */
+    background-color: #f9f9f9; /* Fundo mais claro para os projetos */
     padding: 30px;
     margin-bottom: 30px;
     border-radius: 8px;
@@ -125,7 +128,7 @@ header nav ul li a:hover {
 
 /* Contato */
 #contato {
-    background-color: #3498db; /* Azul para o rodapé e contato */
+    background: linear-gradient(135deg, #16a085, #1abc9c); /* Gradiente verde e azul */
     color: white;
     padding: 50px 20px;
     text-align: center;
@@ -147,7 +150,7 @@ header nav ul li a:hover {
 }
 
 #contato ul li a {
-    color: #f39c12; /* Cor dos links */
+    color: #f39c12; /* Cor dourada dos links */
     text-decoration: none;
 }
 
@@ -157,7 +160,7 @@ header nav ul li a:hover {
 
 /* Rodapé */
 footer {
-    background-color: #333;
+    background-color: #2c3e50; /* Fundo escuro */
     color: white;
     text-align: center;
     padding: 20px 0;
