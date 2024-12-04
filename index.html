@@ -1,1 +1,181 @@
-dadadadada
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfólio - Miguel</title>
+    
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Corpo do site */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            text-align: center;
+        }
+
+        header nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        /* Seções */
+        section {
+            padding: 50px 20px;
+            margin: 20px;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        section ul {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+
+        .projeto {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .projeto h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Principal -->
+    <section id="inicio">
+        <h1>Olá, eu sou o Miguel</h1>
+        <p>Desenvolvedor de Software com 2 anos de experiência.</p>
+        <p>Tenho 18 anos e sou apaixonado por programação e soluções tecnológicas!</p>
+    </section>
+
+    <!-- Sobre Mim -->
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Sou um programador com 2 anos de experiência. Tenho trabalhado com várias linguagens de programação, como Python, JavaScript, e Java. Além disso, sou apaixonado por desafios e sempre busco aprender novas tecnologias.</p>
+        <h3>Principais Habilidades:</h3>
+        <ul>
+            <li>Python, JavaScript, Java, C#</li>
+            <li>HTML, CSS, TypeScript, SQL</li>
+            <li>Frameworks: React.js, Django, Node.js</li>
+            <li>Git/GitHub, Docker, AWS</li>
+        </ul>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos">
+        <h2>Meus Projetos</h2>
+
+        <div class="projeto">
+            <h3>Sistema de Gerenciamento de Tarefas</h3>
+            <p>Uma aplicação para gerenciar tarefas diárias, com autenticação de usuários e persistência em banco de dados MongoDB.</p>
+            <p><strong>Tecnologias:</strong> React.js, Node.js, MongoDB, Express</p>
+        </div>
+
+        <div class="projeto">
+            <h3>API de Reservas de Hotel</h3>
+            <p>API RESTful para realizar reservas em hotéis, com autenticação JWT e gerenciamento de clientes e reservas.</p>
+            <p><strong>Tecnologias:</strong> Python (Django), PostgreSQL</p>
+        </div>
+
+        <div class="projeto">
+            <h3>Portfólio Pessoal</h3>
+            <p>Este site! Uma página simples para apresentar minha experiência e projetos. Ele é totalmente responsivo.</p>
+            <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript, Node.js</p>
+        </div>
+
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Você pode me encontrar nas seguintes plataformas:</p>
+        <ul>
+            <li>Email: miguel@example.com</li>
+            <li>GitHub: <a href="https://github.com/miguel" target="_blank">github.com/miguel</a></li>
+            <li>LinkedIn: <a href="https://linkedin.com/in/miguel" target="_blank">linkedin.com/in/miguel</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Miguel. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Exemplo de interação simples
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log("Portfólio carregado com sucesso!");
+        });
+    </script>
+</body>
+</html>
